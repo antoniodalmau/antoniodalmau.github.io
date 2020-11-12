@@ -233,6 +233,9 @@ const JeelizThreeHelper = (function(){
         alpha: (_isSeparateThreeCanvas || spec.alpha) ? true : false
       });
 
+      _threeRenderer.toneMapping = THREE.ReinhardToneMapping;
+      _threeRenderer.toneMappingExposure = 3;
+
       _threeScene = new THREE.Scene();
       _threeTranslation = new THREE.Vector3();
 
