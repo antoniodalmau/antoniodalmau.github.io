@@ -2,10 +2,10 @@
 
 // SETTINGS of this demo:
 const SETTINGS = {
-  gltfModelURL: 'DamagedHelmet/glTF/DamagedHelmet.gltf',
+  gltfModelURL: 'Facemask/glTF/facemask.gltf',
   cubeMapURL: 'Bridge2/',
-  offsetYZ: [0.3, 0], // offset of the model in 3D along vertical and depth axis
-  scale: 2.5
+  offsetYZ: [.05, .35], // offset of the model in 3D along vertical and depth axis
+  scale: 1.2
 };
 
 let THREECAMERA = null;
@@ -51,6 +51,17 @@ function init_threeScene(spec){
     threeStuffs.faceObject.add(gltf.scene);
   } ); //end gltfLoader.load callback
   
+  var light = new THREE.SpotLight(0xffffff, 1);
+  light.position.set(-50, 50, 50);
+  light.castShadow = true;
+  light.shadow.bias = -0.0001;
+  light.shadow.mapSize.width = 1024 * 4;
+  light.shadow.mapSize.height = 1024 * 4;
+  threeStuffs.faceObject.add(light);
+
+  var hemiLight = new THREE.HemisphereLight(0xffffff, 0x000000, 1);
+  threeStuffs.faceObject.add(hemiLight);
+
   //CREATE THE CAMERA
   THREECAMERA = JeelizThreeHelper.create_camera();
 } //end init_threeScene()
