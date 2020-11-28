@@ -2,10 +2,14 @@
 
 // SETTINGS of this demo:
 const SETTINGS = {
-  gltfModelURL: 'Facemask/glTF/facemask.gltf',
+  gltfModelURL: 'Facemask/glTF/test.gltf',
   cubeMapURL: 'Bridge2/',
-  offsetYZ: [.05, .35], // offset of the model in 3D along vertical and depth axis
-  scale: 1.2
+  //offsetYZ: [.05, .35], // offset of the model in 3D along vertical and depth axis
+  //scale: 1.2
+  //offsetYZ: [.6, -.2], // offset of the model in 3D along vertical and depth axis
+  //scale: 1.5
+  offsetYZ: [-.11, .35], // offset of the model in 3D along vertical and depth axis
+  scale: 1.15
 };
 
 let THREECAMERA = null;
@@ -57,7 +61,15 @@ function init_threeScene(spec){
   light.shadow.bias = -0.0001;
   light.shadow.mapSize.width = 1024 * 4;
   light.shadow.mapSize.height = 1024 * 4;
-  threeStuffs.faceObject.add(light);
+  threeStuffs.faceObject.add(light);  
+
+  var light1 = new THREE.SpotLight(0xffffff, .25);
+  light1.position.set(50, 50, 25);
+  light1.castShadow = true;
+  light1.shadow.bias = -0.0001;
+  light1.shadow.mapSize.width = 1024 * 4;
+  light1.shadow.mapSize.height = 1024 * 4;
+  threeStuffs.faceObject.add(light1);  
 
   var hemiLight = new THREE.HemisphereLight(0xffffff, 0x000000, 1);
   threeStuffs.faceObject.add(hemiLight);
