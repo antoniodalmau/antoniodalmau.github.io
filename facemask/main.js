@@ -82,7 +82,7 @@ function init_threeScene(spec){
 function main(){
   JeelizResizer.size_canvas({
     canvasId: 'jeeFaceFilterCanvas',
-    isFullScreen: false,
+    isFullScreen: true,
     callback: start,
     onResize: function(){
       JeelizThreeHelper.update_camera(THREECAMERA);
