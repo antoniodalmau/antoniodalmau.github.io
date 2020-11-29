@@ -34,9 +34,14 @@ body {overflow: auto; overflow-y: auto;
   
   @media (max-width: 787px) {
     #jeeFaceFilterCanvas {
-      right: 0px;
-      top: 60px;
-      transform: rotateY(180deg);
+      z-index: 10;
+    position: absolute; 
+    max-height: 100%;
+    max-width: 100%;
+    left: 50%;
+    top: 50%;
+    width: 100vmin;
+    transform: translate(-50%, -50%) rotateY(180deg);
     }
   }
   
