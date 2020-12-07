@@ -1,0 +1,326 @@
+#2020-04-09_As a product owner I want to integrate the CUSTOMASK logo in one corner of our masks_B2CS-520
+#2020-04-14_As a product owner I want Graphics prepare assets for CUSTOMASK Smart LP and configurator-mask_B2CS-528
+#Misc
+2015-09-10_Configurator_Frame
+2016-07-08-Mugs_Teaser
+2016-10-18_Wood_Preview_GB-384
+2017-01-09_New_WallDeco_images_GB-643
+2017-06-37_Picanova_COS-GB-1041
+2017-07-12_Pet_Blanket_GB-1273
+2017-07-17_New_Category_GB-1315
+2017-09-18_Office_Interior_CD_GB-1498
+2017-11-10_New_mask_for_cushion_previews_GB-1758
+2017-12-01_visuals_campaign_us_wedding_lifstyle_magazine_GB-1842
+2018-03-14_MULTISHOP_new_cushion_teaser_GB-2089
+2018-07-04_Create_carpet_product_images_GB-2334
+2018-07-05_Facebook_Creatives_Baseball_little_league_GB-2346
+2018-07-13_Create_images_for_premium_blanket_product_page_GB-2359
+2018-09-19_MFDE_update_images_for_photo_on_wood_GB-2554
+2018-10-26_Winter_themed_product_PR_campaign_illustrations_GB-2658
+2018-11-02_MOFR_PTFR_Cyberweek_teaser_for_affiliate_GB-2685
+2018-11-20_MFDE_visuals_for_alu_dibond_direct_print_GB-2738
+2019-02-01_Flyer_Q2-2019_BCNL_GB-2950
+2019-02-08_New_Packaging_Design_GB-2991
+2019-02-12_MFDE_new_fotobuch_landingpage_graphcis
+2019-02-14_Canvas_image_motive_size_update_GB-3003
+2019-03-19_CRM_Newsletter_Teaser_with_Carpet_Blanket_Towel_Cushion_GB-3051
+2019-03-19_Facebook_PSD_template_udate_GB-3006
+2019-04-01_MFDE_Update-images_for_forex_decor_frame_GB3104
+2019-04-01_REAL_REWE_Provide_Udated_framed_picture
+2019-04-04_MFDE_FB_landingpage_for_childrens_drawing_GB-3082
+2019-04-04_MFDE_FB_landingpage_for_childrens_drawing_Xmas-GB-3082
+2019-04-05_MFDE_Create_new_images_for_photobook_GB-3112
+2019-04-10_CRM_new_PSD_template_for_image_towel_200x150cm_GB-3121
+2019-04-11_MDE_MXDE_images_for_publisher_shop_GB-3073
+2019-04-16_UNI_Create_images_for_new_product_canvas_potser_hanger_GB-3140
+2019-04-16_UNI_Create_images_for_new_product_canvas_potser_hanger_GB-3140 copy
+2019-04-17_MFDE_new_teaser_motif_for_VWO_testing_GB-3165
+2019-04-18_Ebay_Canvas_GB-3185
+2019-04-18_Ebay_Premium_Cushion_GB-3190
+2019-04-18_Ebay_Premium_Cushion_GB-3190 copy
+2019-04-23_Ebay_Forex_Wood_GB-3186
+2019-04-23_Ebay_missing-assets_GB-3191
+2019-04-23_Ebay_panorama_mugs_mousepad_GB-3187
+2019-04-23_Ebay_panorama_mugs_mousepad_GB-3187 copy
+2019-04-23_UNI_update_premium_cushion_images_into_soft_fluffy_textile_GB-3137
+2019-04-23_teaser_graphic_mother_day_GB-3163
+2019-04-24_Ebay_Carpet_Towel_GB-3189
+2019-04-24_Ebay_Premium_Basic_Blanket_GB-3188
+2019-04-26_Create_Towel_Images_GB-3183
+2019-04-30_Create_images_for_re_configurator_GB-3172
+2019-05-02_Create_images_for_pre_configurated_products_GB-3215
+2019-05-03_Facebook_graphics_square_inroom_canvas_GB-2937
+2019-05-06_Adapt_towel.graphics_size_for_Facebook_use_GB-3214
+2019-05-07_BCNL_image_sahdow_on_wrong_side_GB-3234
+2019-05-07_MFDE_New_milieu_photo_for_Foto_im_rahmen_GB-3231
+2019-05-10_MFDE_Google_Shopping_Foto_im_Rahmen_GB-3222
+2019-05-10_Product_interior_images_for_Fstoppers_photo_magazine_GB-3227
+2019-05-13_MFDE_Framed_Forex_exploded_drawing_GB-3236
+2019-05-14_Facebook_Creative_edit_inroom_for_blanket_GB-3230
+2019-05-15_MFDE_Framed_pics_Landingpage_GB-3260
+2019-05-15_MFDE_MixPix_mobile_Detail_PIiv_GB-3253
+2019-05-20_Flyer_Q3-2019_MXDE_GB-3274
+2019-05-20_MFDE_Two_printable_photos_fot_magazine_FOTOHITS_GB-3259
+2019-05-21_CRM_new_image_for_towel_deal_GB-3257
+2019-05-22_Flyer_Q3-2019_BCNL_GB-3266
+2019-05-23_Flyer_Q2-2019_MOFR_GB-3278
+2019-05-23_Flyer_Q3-2019_MPUK_GB-3277
+2019-05-24_Flyer_Q2-2019_CDUS_GB-3287
+2019-05-24_Flyer_Q2-2019_CSUS_GB-3287
+2019-05-27_create_new_image_for_200x150cm_towel_GB-3292
+2019-05-28_MFDE_Google_Shopping_IMage_needed_for_new_product_MixPix_please_GB-3298
+2019-05-29_Create_new_outside_3Dme_scanner_COS_players_GB-3295
+2019-06-03_Set_of_towel_creatives_for_facebook_II_GB-3304
+2019-06-04_Canvas_for_Kids_Drawing_LP_GB-3307
+2019-06-05_SeveralShops_Update_Top-Teaser_Image_for_MixPix_LPs_GB-3322
+2019-06-06_MFDE_Create_images_for_photo-prints_and_cards_GB-3300
+2019-06-11_UNI_Create_wood_block_images_GB-3313
+2019-06-13_Ebay_Custom_Gateway_Laun_Products_GB-3184
+2019-06-14_MultiShops_Google_Ads_Creatives_GB-3325
+2019-06-18_CWD_new_previews_GB-3312
+2019-06-26_Groupon_Multi_product_previews_GB-3347
+2019-06-27_Ebay_opensource_80x60_canvas_GB-3371
+2019-06-27_MFDE_Multiple_Products_in_teaser_Desktop_GB-3360
+2019-06-27_REAL:REWE_Create_MixPix_images_GB-3367
+2019-07-02_MFDE_Create_Configurator_masks_for_Vintage_Canvas_GB-3362
+2019-07-02_MFDE_Create_Configurator_masks_for_Vintage_Canvas_GB-3362 copy
+2019-07-02_MixPix_Big_Tile_in_Wood_Optic_GB-3389
+2019-07-02_MixPix_renderings_for_new_material_picker_GB-3390
+2019-07-03_CWD_Isolated_previews_are_missing_for_Alu_Acryl_GB-3392
+2019-07-03_CWD_Isolated_previews_are_missing_for_Alu_Acryl_GB-3392 copy
+2019-07-03_MixPix_Mask_image_for_wood_Preview_GB-3391
+2019-07-10_MFDE_Wood_mixPIx_new_Version_GB-3410
+2019-07-11_MIXPIX_backside_with_adhesive_tape_GB-3396
+2019-07-11_MIXPIX_tiles_on_the_wall_Visual_for_summer_campaign_GB-3408
+2019-07-15_MFDE_Rendering_Canvas_below_the_fold_GB-3420
+2019-07-22-MPUK_Discount_Page_Visual_GB-3428
+2019-07-29_MFDE_Update_teaser_images_on_product_category_pages_GB-3447
+2019-07-30_Acrylblock_GB-3441
+2019-07-30_Alu_GB-3443
+2019-07-30_Canvas_GB-3442
+2019-07-30_Forex_GB-3444
+2019-07-30_MFDE_new_images_for_homepage_and_product_category_pages_GB-3454
+2019-07-30_Wood_GB-3445
+2019-07-31_Canvas_GB-3469
+2019-07-31_Porcelain_Mug_GB-3471
+2019-08-01_New_images_for_StarMap_MFDE_MPUK_GB-3463
+2019-08-06_B2B-Shop_Product_Images_V2
+2019-08-08_Groupon_Mimxed_product_preview_GB-3485
+2019-08-14_Lidl-fotos_Prepare_visuals_for_wall_deco_collage_products_GB-3491
+2019-08-20_MFDE_New_Calendar_Visuals_GB-3494
+2019-09-02_MULTI_Google_Shopping_Image_Needed_StarMap_with_frames_GB-3513
+2019-09-03-Facebook-Creative-Blanket_GB-2717
+2019-09-04_MFDE_Create_images_for_new_product_MixBlox_GB-3543
+2019-09-06_API_Mask_image_for_Towel_GB-3551
+2019-09-09_Various_shops_prepare_perspective_images_for_Social_Organic_pages_for_Autumn_deals_GB-3553
+2019-09-11_MFDE_Shapy_Landing_Page_GB-3583
+2019-09-13_MFDE_New_images_for_new_photo_book_LP_GB-3581
+2019-09-17_CDUS_create_new_multiu_Canvas_teaser_for_A:B_test_GB-3601
+2019-09-17_Foto_REWE_de_Photobook_product_page_graphics_for_relaunch_GB-3603
+2019-09-19_Foto_REWE_de_Calendar_product_page_graphics_for_relaunch_GB-3604
+2019-09-23_MPUK_Product_preview_with_english_wording_GB-3638
+2019-09-25_MFDE_Create_image_for_new_Product_MixBlox_GB-3625
+2019-09-25_foto_rewe_de_graphics_fior_taopix_desktop_software_GB-3613
+2019-09-27_Groupon_Calendar_Close_ups_GB-3655
+2019-09-27_New layout my-picture.co.uk - provide new missing images_GB-3659
+2019-09-27_New layout my-picture.co.uk:gift-certificate teaser image desktop:mobile_GB-3656
+2019-10-01_MFDE_website_banner_needed_GB-3666
+2019-10-01_MPUK_Affiliate_Landinpages_graphics_GB-3662
+2019-10-01_New preview images for collage landingpage_GB-3672
+2019-10-02_CDUS_New_layout_implementation_Affiliate_banner_GB-3667
+2019-10-04_Several Shops_All Devices - Halloween Teaser image for Canvas_GB-3676
+2019-10-04_various shops new social media logo_GB-3675
+2019-10-07_MFDE_Printable_photos_needed_GB-3674
+2019-10-07_REWE_greeting_cards_GB-3668
+2019-10-07_REWE_poster_GB-3669
+2019-10-09_Change picture for Product Holzblock _GB-3665
+2019-10-09_Lidl ITA New images for Offline Software LP_GB-3680
+2019-10-09_MFDE_some new graphics for changes on :fotokalender LP_GB-3686
+2019-10-09_Mug animated picture in the configurator_GB-3694
+2019-10-09_UNI_mask_miage_for_MixPix_GB-3687
+2019-10-09_bestecanvas.nl Shadow missing for starmaps_GB-3693
+2019-10-10_AdRoom_Standalone_Newsletter_GB-3708
+2019-10-11_MFDE_Product_Shapes_Landing_page_GB-3583
+2019-10-11_MFDE_emotional_teaser_image_GB-3696
+2019-10-11_meinfoto.de:canvasdiscount.com:my-picture.co.uk create a halloween Teaser_GB-3695
+2019-10-22_Blanket_Preview_Image_GB-3728
+2019-10-22_MFDE_Change MixPix puzzle like image to less misleading option_GB-3716
+2019-10-24_Graphics for 2019 TV Spot_GB-3732
+2019-10-25_Teaser picture with presentation of multiple products_ABT-11
+2019-10-25_Teaser picture with presentation of multiple products_ABT-11 copy
+2019-10-28_Groupon_US_Towels_GB-3737
+2019-11-12_MAES_editorial product photos for PR cooperation with OCIMAG_GB-3746
+2019-11-12_MFDE_Graphics_for_new_Fotobuch_Fotos_Category_page_needed_GB-3742
+2019-11-13_Google_Showcase_Images_needed_GB-3749
+2019-11-14_MXDE_PTFR_Desktop_Tablet_Background_GB-3757
+2019-11-14_print collage design on a mug (only panoramic view)_GB-3682
+2019-11-15_MF Banners needed for MixBlox_GB-3806
+2019-11-19_MFDE_MixBlox_graphcis_update_GB-3789
+2019-11-19_PhotoGifts_product page mock-up and assets : MixBlox_GB-3792
+2019-11-19_mypicture.com.au please create a new Teaser like we have for CD please_GB-3795
+2019-11-20_MF Christmas visual for Premium Blanket_GB-3824
+2019-11-21_Groupon mini acrylic block (MixBlox) previews_GB-3797
+2019-11-21_Meinfoto Multiproduct Top Teaser Home_GB-3833
+2019-11-25_MFDE_2 cutout blanket images needed_GB-3830
+2019-11-25_lidl-fotos mini books - 10x10, 13x13, 10x15, full view, details, room preview_GB-3832
+2019-11-25_lidl-fotos.de:fotobuecher - Exchange teaser and product images_GB-3840
+2019-11-27_Frame_Retro_Canvas_GB-3841
+2019-11-27_MFDE_Pillow_Masks_GB-3837
+2019-11-27_Multiple Shops Exchange LP summer : autumn Motives to christmas tree motives_GB-3862
+2019-11-27_ebay - adjusted main graphics canvas - add hint_GB-3838
+2019-11-28_uk.PhotoGifts Adjustments to product images_GB-3861
+2019-11-29_meinfoto.de Update an image for MIXPIX Acrylic_GB-3863
+2019-12-05_Create blank products - mug - blanket - cushion - carpet - towel-GB-3910
+2019-12-06_MFDE_Xmas-Winter_Deatil_Pics_GB-3914
+2019-12-06_lidl-fotos.de mini book format icons preconfig , 10x10, 10x15,  13x13_GB-3909
+2019-12-12_Graphics Premium Plus Blanket_GB-3869
+2019-12-13_Groupon - Premium Blanket images_GB-3932
+2019-12-17_CLONE - Graphics Premium Blanket_GB-3959
+2019-12-19_Lidl - Taopix Themed Books - Travel_GB-3015
+2020-01-03_Graphics Photo Gifts bestcanvas-ca_GB-3973
+2020-01-03_Graphics Photo Gifts canvasdiscount_com_GB-3972
+2020-01-03_us.photo.gifts teaser_GB-3970
+2020-01-06_Graphics Photo Gifts canvasonsale_com_GB-3971
+2020-01-07_assets - valentines day 14th February 2020_GB-3859
+2020-01-07_logo - valentines day 14th February 2020_GB-3858
+2020-01-09_Graphics Premium Blanket_GB-3993
+2020-01-15_facebook gif square mixblox 1080x1080px_GB-3991
+2020-01-15_newsletter graphics | Mixblox & Mixpix | canvasonsale_GB-3990
+2020-01-16_BCSE Facebook preview graphic needed_GB-4012
+2020-01-20-Winterpic for Testpage of Antonio-GB-4014
+2020-01-20_Several Shops New :configurator mask for premium blanket_GB-4017
+2020-01-21_facebook graphics psd edit new productts_GB-4026
+2020-01-22_US Shops Graphic Update MIXPIX_GB-4032
+2020-01-23_Lidl DE graphics for new starmap formats_GB-4043
+2020-01-24_Lidl-fotos.de NL graphics valentines day_GB-4047
+2020-01-24_Lidl-fotos.de Tesa graphics valentines day_GB-4046
+2020-01-27_Retro Canvas Configurator Mask_GB-4049
+2020-01-27_various shops new images for Social Organic pages for Valentines day deals_GB-4044
+2020-01-28_Lidl-fotos.de Header for NL graphic towel + carpet_GB-4059
+2020-01-28_Valentine's Day Headergraphics Startseite_GB-4056
+2020-02-03_COS Graphic update for Aluminum_GB-4068
+2020-02-03_Multi Shop new blanket mask for cross selling box in shoppingcart_GB-4058
+2020-02-05-MFDE - New mask for premium plus blanket_GB-4081
+2020-02-05_Provide a round photo graphic similar to the mixpix graphic _GB-4082
+2020-02-11_MFDE - Create teaser and assets for birth cushion landingpage_GB-4092
+2020-02-11_MFDE - Create teaser and assets for birth cushion landingpage_GB-4092 copy
+2020-02-12_COS Forex close view update_GB-4100
+2020-02-12_Lidl DE Product previews for Taopix desktop client_GB-4019
+2020-02-12_MFDE - Design a new Best-Preis-Garantie seal_GB-4094
+2020-02-13_Meinfoto Personalized Homepage Teaser_GB-4084
+2020-02-17_MFDE - Update the new animated teaser design_GB-4123
+2020-02-19_Photo.Gifts Basic Cushion product mask_GB-4137
+2020-02-19_Rendering images of Vintage Oak Flair Frame_GB-4120
+2020-03-11_GNTM photos need credits_GB-4175
+2020-03-17_various shops new images for Social Organic pages - Easter_GB-4174
+2020-03-19_Images for 10x10 Acryl Minis_GB-4186
+2020-03-24_Create Name Cushion and Name Blanket Landingpage Teaser and Assets_GB-4185
+2020-03-25_various shops New Easter creatives - Easter_GB-4172
+2020-03-27_MFDE Create teaser, navi icon and product images for printed mask _GB-4205
+2020-03-27_MFDE Create teaser, navi icon and product images for printed mask _GB-4205 copy
+2020-03-31_MF Face masks pictures for Social and press pages needed_GB-4211
+2020-04-02_Face Mask graphics for Lidl, REWE and real_GB-4224
+2020-04-02_MFDE Create 4 images of people wearing our face mask_GB-4221
+2020-04-03_canvasdiscount.com top teaser image for canvas collage LP_GB-4225
+2020-04-06_canvasonsale.com reduce image file size_GB-4233
+2020-04-08_Rendering product images_GB-4244
+2020-04-09_As a product owner I want to integrate the CUSTOMASK logo in one corner of our masks_B2CS-520
+2020-04-09_various shops new images for Social Organic deal pages _GB-4240
+2020-04-13_Photobook Masks for Lidl Pre Configurator_GB-4245
+2020-04-14_As a product owner I want Graphics prepare assets for CUSTOMASK Smart LP and configurator-mask_B2CS-528
+2020-04-17_facebook face mask graphics II_GB-4252
+2020-04-22_fb grapics photo puzzle_GB-4243
+2020-04-23_Premium and Smart Masks for artist landing page_GB-4266
+2020-04-27_Product view sewing masks_GB-4272
+2020-04-28_Lidl_Photobook Pictures_GB-4273
+2020-04-30_Product view Customask Pure_GB-4276
+2020-05-04_meinxxl.de Create new graphics for CUSTOMASK Premium LP_GB-4280
+2020-05-05_Lidl Photobook Top Teaser with different Photobooks_GB-4277
+2020-05-05_Meinfoto Pure Mask Top Teaser_GB-4278
+2020-05-08_MF Images for advertorial needed_GB-4289
+2020-05-08_Produkt "Geburtskissen" .png for Power Point pitchdeck_GB-4296
+2020-05-12_meinfoto spitting protection - teaser and assets_GB-4300
+2020-05-14_logo and editorial images for Canadian photo magazines_GB-4297
+2020-05-20_Please create banners for photo.club dashboard_GB-4324
+2020-05-25_MFDE Pictures for new Product Teaser_GB-4327
+2020-05-29_Adjust configurator mask for face mask NEO and NEO KIDS to fullprint_GB-4345
+2020-06-02_Rewe Foto 2 templates:graphics for facemask_GB-4347
+2020-06-03-Face mask NEO and PREMIUM images for animated gif_GB-4341
+2020-06-04_MFDE - Images for TV spot_GB-4361
+2020-06-05_NEO Fullprint New graphic assets for NEO configurator page_B2CS-716
+2020-06-09_As a product owner I want Graphics to prepare updated images for Face Masks_B2CS-743
+2020-06-12_Create Mock-Up for all B2B-Shop : API-Shop products_GB-4365
+2020-06-16_Magnofix for sheets confi_GB-4371
+2020-06-17_MF Masks with Humor Hilft Heilen design_GB-4394
+2020-06-22_Update Previews for Basic Blanket:Wall Tapestry_GB-4409
+2020-06-22_create image mask for customized graphics_GB-4393
+2020-06-23_Graphics for:photo.club CRM new loyalty program GB-4410
+2020-06-24_Provide_images_and_teaser_for_Master_Template_Project_GB-4333
+2020-06-29_SVG_files_for_photo_club_CRM_new_loyalty_program_GB-4428
+2020-06-29_Wood_image_update_GB-4397
+2020-07-01-MX_updated_Mask images_GB-4429
+2020-07-03_Screendesign_for_orderscuccess_test_crm_GB-4432
+2020-07-06_Create_a_logo_for_Perfect_Picture_Technology_GB-4443
+2020-07-08_Window_blinds_landingpage_teaser_and_assets_GB-4445
+2020-07-14_B2CS-928
+2020-07-14_B2CS-942
+2020-07-15_MF_Advertisements_for_LED_boards_needed_GB-4462
+2020-07-17_Photo.Gifts_EU_Update_Wood_prints_images_GB-4465
+2020-07-20_b2b-shop-eu_picanova_com_Update_Wood_prints_images_GB-4466
+2020-07-23_my-picture_co_uk_logos_needed_GB-4482
+2020-07-27_CDUS_creatives_with_the_USA_flag_for_Facebook_Ads_GB-4484
+2020-07-30_Category_page_adding mask_and_windowblinds_GB-4489
+2020-07-31_my-picture.co.uk_wrong_Product_on_Teaser_image_GB-4492
+2020-08-06_Create_new_configurator_masks_for_towels_GB-4510
+2020-08-25_Office_Depot_Masks_for_the_configurator_additional_graphics_GB-4547
+2020-08-27_Animated_gif_for_enamel_mug_on_configurator_page_GB-4568
+2020-08-28_MF_image_as_canvas_in_mockup_GB-4577
+2020-09-01_Grafomaps_product_image_Hanger_GB-4549
+2020-09-02_New_landig_page_design_for_photonika_GB4587
+2020-09-03_meinfoto_de_please_create_a_new_mask_image_for_blanket_GB-4593
+2020-09-10_Canvasdiscount_New Images_for_Blankets_GB-4606
+2020-09-14_Visuals_for_LIDL_Page_End_of_Lidl_Photo_GB-4596
+2020-09-16_Lidl-fotos_de_Create overlay_for_wall_calendars_to_show_the_spira_ binding_GB-4599
+2020-09-23_B2B-shop_Teaser_image_for_Profi_Foto_GB-4643
+2020-09-24_b2b-shop_image_for_kids_format_of_ NEO_masks_GB-4642
+2020-10-01_Multiple_Shops_Creatives_for_Helloween_GB-4559
+2020-10-01_Multishops_Teaser-Images_for_Photo_Cards_GB-4654
+2020-10-01_Teaser_Image_for_YouTube_Account_GB-4665
+2020-10-05_Second_Flight_B2B-Shop_Facebook_ Campagain_Graphics_GB-4676
+2020-10-07_Facebook_Graphic_for_Child_Blanket_GB-4675
+2020-10-07_REWE _Foto_Glückslos_graphic_2021_GB-4689
+2020-10-08_Office_Depot_Facemasks_configurator_on_page_images_GB-4691
+2020-10-09_BestCanvas_se_logo_print_files_for_a_PR_cooperation_GB-4704
+2020-10-13_Images_for_Poster_GB-4695
+2020-10-19_MFDE_Cross_promotion_teaser_for_name_blanket_on_the_photo_blanket_product_page_GB-4711
+2020-10-20_ALDI_Fotos_product_masks_stencils_for_download_client_GB-4726
+2020-10-20_Groupon_Puzzle_preview_images_GB-4736
+2020-10-21_Groupon_Face_Mask_images_GB-4725
+2020-10-22_PhotoGifts_EU_UK_new assets_for_Puzzles_GB-4735
+2020-10-22_Shopify-Batch_Störer_for_B2B-Shop_GB-4756
+2020-10-23_As_a shop_manager_I_want_to_temporarily_add_a_Scary_Halloween_Sale_to_our_navigation_bars_several_shops_B2CS-1401
+2020-10-23_MFDE_Graphics_for_cross_promotion_section_on_kids_product_pages_GB-4741
+2020-11-02_MFDE_Cross_promotion_teaser_for_name_cushion_on_the_photo_cushion_product_page_GB-4774
+2020-11-02_Mixmagx_create_product_images_GB-4505
+2020-11-04_Graphic_for_BCSE_x_Imbull_GSG_GB-4777
+2020-11-04_Three_new_templates_for_Premium_Blanket_GB-4785
+2020-11-05_New_Graphics_for_MF_GSG_BFF_GB-4782
+2020-11-06_Graphics_for_MFxOutbrain_Acryl_GB-4803
+2020-11-06_REWE _Foto_Creating_Black_Week_Teaser _GB-4809
+2020-11-10_Graphic_for_Grafomap_x_CNN_GB-4793
+2020-11-11_4_Infographics_1_Header_Teaser_Picture_for_the_CanvasDiscountcom_Christmas_Campaign_GB-4814
+2020-11-12_Multiple_Shops_Los_Reyes_Magos_Creatives_GB-4563
+2020-11-18_Groupon_Blanket_images_GB-4831
+2020-11-19_MFDE_NEO_mask_teaser_with_FREE_promotion_GB-4865
+2020-11-19_REWE Foto_Creating_Festtage_Graphic_GB-4844
+2020-11-20_bestcanvas_ca_wrong_product_image_for_cushion_GB-4846
+2020-11-23_my-picture_co_uk_ face_mask_teaser_GB-4875
+2020-11-24_7_Christmas-themed_visuals_for_the_CanvasDiscount_com_blog_post_GB-4833
+2020-11-25_5_Christmas-themed_visuals_ for_the_CanvasDiscount_com_blog_post_GB-4834
+2020-11-27_MF_Instagram_Pictures_for_Christmas_contests_GB-4874
+2020-11-30_MXL_New_Picture_for_Instagram_needed_autumn_winter_GB-4861
+2020-11-30_my-picture_co_uk_update_photo_card_LP_for_improved_UX_B2CS-1670
+2020-12-01_REWE_Foto_Festtage_Graphic_Additional_Tiles_GB-4905
+2020-12-03_4_visuals_1_header_for_MPUK_GB-4896
+2020-12-03_MF_IMages_needed_GB-4909
+list.txt
