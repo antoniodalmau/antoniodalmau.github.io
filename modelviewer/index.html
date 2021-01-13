@@ -52,6 +52,8 @@
       background-color: #eee;
       overflow-x: hidden;
       --poster-color: #eee;
+      width: auto;
+      height: 100vmax;
     }
 
     #ar-button {
@@ -129,10 +131,7 @@
     .slide:focus-visible {
       outline: 1px solid #4285f4;
     }
-    @media only screen and (max-width: 768px) {
-      model-viewer{width:auto;height: 90vh;} 
-  }
-}
+
   </style>
 </head>
 
@@ -140,7 +139,7 @@
 
   <model-viewer alt="model name" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" autorotate
     camera-controls exposure=".65" ios-src="mug.usdz" loading="lazy" quick-look-browsers="safari chrome"
-    shadow-intensity="1" src="mug.glb" style="width: auto; height:100vh;">
+    shadow-intensity="1" src="mug.glb" styles="width: auto; height:90vh;">
     <br>
     <span class="footer" style="font-size: small;">Select a product:</span>
     <br>    
