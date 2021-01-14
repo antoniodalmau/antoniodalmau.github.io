@@ -53,7 +53,7 @@
       overflow-x: hidden;
       --poster-color: #eee;
       width: auto;
-      height: 100vmax;
+      height: 100vh;
     }
 
     #ar-button {
@@ -131,6 +131,14 @@
     .slide:focus-visible {
       outline: 1px solid #4285f4;
     }
+
+    @media only screen and (max-width: 600px) {
+  
+    model-viewer {      
+      width: auto;
+      height: 90vh;
+    }  
+}
 
   </style>
 </head>
