@@ -46,7 +46,7 @@
       <div class="container">
         <a class="navbar-brand text-muted" href="#">Product Visualization in 3D & AR</a>
         <div class="d-flex">
-          <a href="sample.html" class="btn btn-outline-danger btn-sm">SAMPLE</a>
+          <a href="sample.html" class="btn btn-primary btn-sm">TRY NOW</a>
         </div>
       </div>
     </nav>
@@ -72,7 +72,7 @@
               class="text-success">"mug.glb"</span><span class="text-danger">&gt;&lt;/model-viewer&gt;</span></p>
         </div>
         <div class="col-md-5">
-          <model-viewer alt="mug" src="mug.glb" ios-src="mug.usdz" loading="lazy" auto-rotate camera-controls>
+          <model-viewer alt="mug" src="mug.glb" disable-zoom loading="lazy" auto-rotate camera-controls>
           </model-viewer>
         </div>
       </div>
@@ -97,49 +97,36 @@
       </div>
 
       <hr class="featurette-divider">
-      <div class="text-center">
-        <div class="btn btn-dark position-relative btn-lg">
-          Examples of possible applications <svg width="1em" height="1em" viewBox="0 0 16 16"
-            class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill" fill="#212529"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-          </svg>
-        </div>
-      </div>
-      <p><br><br><br></p>
-
+     
       <div class="row featurette">
         <div class="col-md-6">
-          <h2 class="featurette-heading">Landing Page. <span class="text-muted">As Visual Aids.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
+          <h2 class="featurette-heading">Visual Aids <span class="text-muted">for complex geometries.</span></h2>
+          <p class="lead">
+            <span class="badge bg-secondary">Home Page</span>
+            <span class="badge bg-secondary">Landing Pages</span>
+            <span class="badge bg-secondary">Configurator</span>            
+          </p>
         </div>
         <div class="col-md-6">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
+          <model-viewer alt="mug" src="complex.glb" loading="lazy" auto-rotate camera-orbit="45deg 110deg .9m">
+          </model-viewer>
         </div>
       </div>
 
+      <hr class="featurette-divider">
+
       <div class="row featurette">
         <div class="col-md-6">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
+          <img src="ar.jpg" alt="ar" class="img-fluid">
+          
         </div>
         <div class="col-md-6">
-          <h2 class="featurette-heading">Configurator. <span class="text-muted">As Visual Aids.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
+          <h2 class="featurette-heading">Enhanced customer engagement <span class="text-muted">though
+              interaction.</span></h2>
+          <p class="lead">
+            Customers are willing to interact with the product and by doing so they become more involved and can be
+            driven to seek out additional information about the products which ultimately increases customer’s
+            willingness to purchase on the e-commerce platform.</p>
         </div>
       </div>
 
