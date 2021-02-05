@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  <style>
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      color: #666;
+      text-align: center;
+      background-color: #eeeeee;
+      /*background-image: radial-gradient(dimgrey, black);*/
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+        "Helvetica Neue", sans-serif;
+    }
+
+    model-viewer {
+      background-color: #eee;
+      overflow-x: hidden;
+      --poster-color: #eee;
+      width: auto;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+
+<body>  
+
+  <model-viewer alt="model"  autoplay animation-name="Armature|mixamo.com|Layer0" ar ar-modes="scene-viewer webxr quick-look" ar-scale="auto" camera-controls exposure=".7"
+    ios-src="model.usdz" loading="lazy" quick-look-browsers="safari chrome" shadow-intensity="1" src="animation.glb"
+    environment-images="equirectangular.hdr" styles="width: auto; height:90vh;">
+  </model-viewer>
+
+
+</body>
+
+</html>
