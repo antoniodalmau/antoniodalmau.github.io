@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: #666;
+  text-align: center;
+  background-color: #eeeeee;
+  /*background-image: radial-gradient(dimgrey, black);*/
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+select {
+  font-size: xx-large;
+  background: rgba(82, 55, 55, 0.05);
+  padding: .5em;
+  color: #666;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: center;
+  text-align-last: center;
+  -moz-text-align-last: center;
+}
+
+select:focus {
+  outline: none;
+}
+
+/* This keeps child nodes hidden while the element loads */
+
+:not(:defined)>* {
+  display: none;
+}
+
+model-viewer {
+  background-color: #eee;
+  overflow-x: hidden;
+  --poster-color: #eee;
+  width: auto;
+  height: 100vh;
+}
+
+#ar-button {
+  background-image: url(../img/icon-ar.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 12px 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  bottom: 132px;
+  padding: 0px 16px 0px 40px;
+  font-family: Roboto Regular, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  color: #4285f4;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 18px;
+  border: 1px solid #DADCE0;
+}
+
+#ar-button:active {
+  background-color: #E8EAED;
+}
+
+#ar-button:focus {
+  outline: none;
+}
+
+#ar-button:focus-visible {
+  outline: 1px solid #4285f4;
+}
+
+@media only screen and (max-width: 600px) {
+  model-viewer {
+    width: auto;
+    height: 92vh;
+  }
+}
