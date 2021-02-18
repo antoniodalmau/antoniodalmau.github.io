@@ -17,9 +17,11 @@ body.modal-open .modal {
 
 body.modal-open .modal .modal-dialog {
   margin: auto;
-  width: 300px;
+  width: 250px;
 }
-
+.footer{
+  font-size: small;
+}
 select {
   font-size: xx-large;
   background: rgba(82, 55, 55, 0.05);
