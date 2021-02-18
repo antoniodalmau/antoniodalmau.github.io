@@ -35,32 +35,30 @@
       View in your Space
     </button>
     <!-- Button trigger modal -->
-    <button type="button" id="ar-button" classs="modal-dialog modal-dialog-centered" data-bs-toggle="modal" data-bs-target="#QRCode" style="z-index: 1;">
+    <button type="button" id="ar-button" classs="modal-dialog modal-dialog-centered" data-bs-toggle="modal"
+      data-bs-target="#QRCode" style="z-index: 1;">
       View in your Space
     </button>
 
     <!-- Modal -->
-    <div class="modal fade modal-sm" id="QRCode" tabindex="-1" aria-labelledby="QRCode" aria-hidden="true">
+    <div class="modal fade" id="QRCode" tabindex="-1" aria-labelledby="QRCode" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Scan the QR code for Augmented reality              
-              </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title fw-bold" id="exampleModalLabel">Scan the QR code for Augmented reality
+            </h5>
           </div>
           <div class="modal-body">
             <img src="img/qr-code.svg" class="img-fluid" alt="">
           </div>
-          <p>iOS 13+, iPadOS 13+ or Android with ARCore 1.9+ required
-            </p>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-            
+
           </div>
         </div>
       </div>
     </div>
-    
+
   </model-viewer>
 
   <script>

@@ -9,6 +9,17 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+
+body.modal-open .modal {
+  display: flex !important;
+  height: 100%;
+} 
+
+body.modal-open .modal .modal-dialog {
+  margin: auto;
+  width: 300px;
+}
+
 select {
   font-size: xx-large;
   background: rgba(82, 55, 55, 0.05);
