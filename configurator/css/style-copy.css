@@ -94,8 +94,9 @@ model-viewer {
   text-align: center;
   padding-top: 30%;
   padding-left: 30px;
-  padding-right: 30px;  
-  color: #aaaaaa;
+  padding-right: 30px; 
+  background-color: #e7f1ff; 
+  /*color: #aaaaaa;*/
   width: 300px;
   height: 300px;
   margin: 10px auto;  

@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="css/style-copy.css">
 </head>
 
-<body class="d-flex flex-column h-100" onload="updateChoices()">
+<body classs="d-flex flex-column h-100" onload="updateChoices()">
 
     <div class="row d-flex align-items-center">
         <div class="col-xl-9 col-lg-8">
-            <model-viewer camera-controls src="models/cushion.glb" alt="model" shadow-intensity="1" disable-zoom>
+            <model-viewer camera-controls src="models/cushion.glb" alt="model" shadow-intensity="1">
                 <div class="position-absolute bottom-0" id="status"></div>
             </model-viewer>
         </div>
@@ -40,14 +40,15 @@
                             <div class="upload-demo">
                                 <input type="file" id="upload" value="Choose a file" accept="image/*"
                                     data-role="none" />
-                                <div class="upload-msg btn">
-                                    <img src="img/icon-upload.svg" alt="svg" height="42">
+                                <div class="upload-msg btn link-primary">
+                                    <img src="img/icon-upload.svg" alt="svg" height="42"
+                                        style="filter: invert(28%) sepia(61%) saturate(2999%) hue-rotate(210deg) brightness(99%) contrast(99%);">
                                     <p class="fs-6"><sub> UPLOAD AN IMAGE</sub></p>
                                 </div>
                                 <div id="upload-demo"></div>
                                 <div class="buttons" style="margin:0 auto;display:table;">
                                     <button id="btn" class="reset btn btn-primary btn-sm" data-role="none">
-                                        <span class="align-middle"> Upload other image </span>
+                                        Change Image
                                     </button>
                                 </div>
                             </div>
@@ -65,7 +66,7 @@
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body text-start" onchange="updateChoices()">
                             <input type="radio" class="btn-check" name="size" id="30cm" value="30x30 cm"
-                                autocomplete="off" checked>                                
+                                autocomplete="off" checked>
                             <label class="btn btn-outline-primary btn-sm" for="30cm">30x30 cm</label>
                             <input type="radio" class="btn-check" name="size" id="40cm" value="40x40 cm"
                                 autocomplete="off">
@@ -87,12 +88,13 @@
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body text-start" onchange="updateChoices()">
-                            <input type="radio" class="btn-check" name="back" id="white" value="White"
+                            <input type="radio" class="btn-check" name="back" id="white" value="#f8997c"
                                 autocomplete="off" checked>
                             <label class="btn btn-outline-primary btn-sm" for="white">White</label>
-                            <input type="radio" class="btn-check" name="back" id="colour" value="Colour"
+                            <input type="radio" class="btn-check" name="back" id="colour" value="#FF00FF"
                                 autocomplete="off">
                             <label class="btn btn-outline-primary btn-sm" for="colour">Color</label>
+                            <input id="metalness" type="range" min="0" max="1" step="0.01" value="1">
                         </div>
                     </div>
                 </div>
@@ -107,7 +109,8 @@
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body text-start" onchange="updateChoices()">
-                            <input type="radio" class="btn-check" name="effect" id="none" value="none"autocomplete="off" checked>
+                            <input type="radio" class="btn-check" name="effect" id="none" value="none"
+                                autocomplete="off" checked>
                             <label class="btn btn-outline-primary btn-sm" for="none">None</label>
                             <input type="radio" class="btn-check" name="effect" id="w&b" autocomplete="off">
                             <label class="btn btn-outline-primary btn-sm" for="w&b">White & Black</label>
@@ -126,7 +129,17 @@
                 '&nbsp;&nbsp;<strong>SIZE: </strong>' + $("input[name='size']:checked").val() +
                 '&nbsp;&nbsp;<strong>BACK: </strong>' + $("input[name='back']:checked").val() +
                 '</sup>'
-                );
+            );
+            const modelViewerTexture = document.querySelector("model-viewer");
+            let material = modelViewerTexture.model.materials[1];
+            var hex = $("input[name='back']:checked").val();
+            hex = hex.replace('#', '');
+            r = parseInt(hex.substring(0, 2), 16)/255;
+            g = parseInt(hex.substring(2, 4), 16)/255;
+            b = parseInt(hex.substring(4, 6), 16)/255;
+            var backsidecolor = [r, g, b, 1];
+            material.pbrMetallicRoughness.setBaseColorFactor(backsidecolor);
+            console.log(backsidecolor);
         }
     </script>
 
@@ -160,7 +173,7 @@
                         reader.onload = function (e) {
                             $('.upload-demo').addClass('ready');
                             $uploadCrop.croppie('bind', {
-                                url: e.target.result                                
+                                url: e.target.result
                             }).then(function () {
                                 console.log('jQuery bind complete');
                             });
@@ -192,7 +205,7 @@
                     height: 300
                 },
                 mouseWheelZoom: true,
-                customClass: 'testCroppie'                
+                customClass: 'testCroppie'
             });
 
             $('#upload').on('change', function () { readFile(this); });
