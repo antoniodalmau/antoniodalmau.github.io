@@ -21,7 +21,6 @@
     <div class="row d-flex align-items-center">
         <div class="col-xl-9 col-lg-8">
             <model-viewer camera-controls src="models/cushion.glb" alt="model" shadow-intensity="1" disable-zoom>
-                <div class="position-absolute bottom-0" id="status"></div>
             </model-viewer>
         </div>
         <div class="col-xl-3 col-lg-4">
@@ -31,8 +30,7 @@
                     <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Image
-                        </button>
+                            Images </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse show"
                         aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -41,14 +39,19 @@
                                 <input type="file" id="upload" value="Choose a file" accept="image/*"
                                     data-role="none" />
                                 <div class="upload-msg btn">
-                                    <img src="img/icon-upload.svg" alt="svg" height="42">
-                                    <p class="fs-6"><sub> UPLOAD AN IMAGE</sub></p>
+                                    <img src="img/file-earmark-image.svg" alt="svg" height="42">
+                                    <p class="fs-6"><sub> UPLOAD A IMAGE</sub></p>
                                 </div>
                                 <div id="upload-demo"></div>
                                 <div class="buttons" style="margin:0 auto;display:table;">
-                                    <button id="btn" class="reset btn btn-primary btn-sm" data-role="none">
-                                        <span class="align-middle"> Upload other image </span>
-                                    </button>
+                                    <button id="btn" class="reset btn link-danger" data-role="none"
+                                        style="margin-left:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                        </svg> <span class="align-middle">Remove Image</span></button>
                                 </div>
                             </div>
                         </div>
@@ -57,15 +60,16 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
+                            id="size">
                             Size
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body text-start" onchange="updateChoices()">
+                        data-bs-parent="#accordionFlushExample" onchange="updateChoices()">
+                        <div class="accordion-body text-start">
                             <input type="radio" class="btn-check" name="size" id="30cm" value="30x30 cm"
-                                autocomplete="off" checked>                                
+                                autocomplete="off" checked>
                             <label class="btn btn-outline-primary btn-sm" for="30cm">30x30 cm</label>
                             <input type="radio" class="btn-check" name="size" id="40cm" value="40x40 cm"
                                 autocomplete="off">
@@ -80,13 +84,13 @@
                     <h2 class="accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
+                            aria-controls="flush-collapseThree" id="back">
                             Back Side
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body text-start" onchange="updateChoices()">
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample" onchange="updateChoices()">
+                        <div class="accordion-body text-start">
                             <input type="radio" class="btn-check" name="back" id="white" value="White"
                                 autocomplete="off" checked>
                             <label class="btn btn-outline-primary btn-sm" for="white">White</label>
@@ -106,8 +110,8 @@
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body text-start" onchange="updateChoices()">
-                            <input type="radio" class="btn-check" name="effect" id="none" value="none"autocomplete="off" checked>
+                        <div class="accordion-body text-start">
+                            <input type="radio" class="btn-check" name="effect" id="none" autocomplete="off" checked>
                             <label class="btn btn-outline-primary btn-sm" for="none">None</label>
                             <input type="radio" class="btn-check" name="effect" id="w&b" autocomplete="off">
                             <label class="btn btn-outline-primary btn-sm" for="w&b">White & Black</label>
@@ -121,12 +125,8 @@
 
     <script>
         function updateChoices() {
-            $("#status").html(
-                '<sup>' +
-                '&nbsp;&nbsp;<strong>SIZE: </strong>' + $("input[name='size']:checked").val() +
-                '&nbsp;&nbsp;<strong>BACK: </strong>' + $("input[name='back']:checked").val() +
-                '</sup>'
-                );
+            $("#size").html('Size' + '&nbsp&nbsp<sub style=margin-top:-3px;>' + $("input[name='size']:checked").val() + '</sub>');
+            $("#back").html('Back' + '&nbsp&nbsp<sub style=margin-top:-3px;>' + $("input[name='back']:checked").val() + '</sub>');
         }
     </script>
 
@@ -140,14 +140,13 @@
 
             ////this works but wont let me set a new readFile input
             $(".reset").click(function () {
-                $("#upload").click();
-                //location.reload();
-                //$('.upload-demo').removeClass('ready');
-                //$uploadCrop.croppie('bind', {
-                //    url: ''
-                //}).then(function () {
-                //    console.log('reset complete');
-                //});
+                location.reload();
+                $('.upload-demo').removeClass('ready');
+                $uploadCrop.croppie('bind', {
+                    url: ''
+                }).then(function () {
+                    console.log('reset complete');
+                });
             })
 
             var $uploadCrop;
@@ -160,7 +159,7 @@
                         reader.onload = function (e) {
                             $('.upload-demo').addClass('ready');
                             $uploadCrop.croppie('bind', {
-                                url: e.target.result                                
+                                url: e.target.result
                             }).then(function () {
                                 console.log('jQuery bind complete');
                             });
@@ -188,11 +187,11 @@
                     type: 'square'
                 },
                 boundary: {
-                    width: 300,
+                    width: w,
                     height: 300
                 },
                 mouseWheelZoom: true,
-                customClass: 'testCroppie'                
+                customClass: 'testCroppie'
             });
 
             $('#upload').on('change', function () { readFile(this); });

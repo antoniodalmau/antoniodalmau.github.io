@@ -13,6 +13,8 @@
 
 <body>
 
+
+
   <model-viewer alt="model" ar ar-modes="scene-viewer webxr quick-look" ar-scale="auto" camera-controls exposure=".7"
     ios-src="model/mug.usdz" loading="lazy" quick-look-browsers="safari chrome" shadow-softness="1" shadow-intensity="1"
     src="models/mug.glb" styles="width: auto; height:90vh;">
@@ -27,40 +29,35 @@
       <option value="canvas">Canvas</option>
     </select>
 
-
-    <!--button slots="ar-button" id="ar-button">
-      View in your Space
-    </button-->
     <button slot="ar-button" id="ar-button" style="z-index: 99;">
       View in your Space
     </button>
-    <!-- Button trigger modal -->
+
+
     <button type="button" id="ar-button" classs="modal-dialog modal-dialog-centered" data-bs-toggle="modal"
       data-bs-target="#QRCode" style="z-index: 1;">
       View in your Space
     </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="QRCode" tabindex="-1" aria-labelledby="QRCode" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title fw-bold" id="exampleModalLabel">Scan the QR code for Augmented Reality
-            </h5>
-          </div>
-          <div class="modal-body">
-            <img src="img/qr-code.svg" class="img-fluid" alt="">
-          </div>
-          <p class="footer" >iOS 13+, iPadOS 13+ or Android with ARCore 1.9+ required</p>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+  </model-viewer>
 
-          </div>
+  <div class="modal fade" id="QRCode" tabindex="-1" aria-labelledby="QRCode" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="exampleModalLabel">Scan the QR code for Augmented Reality
+          </h5>
+        </div>
+        <div class="modal-body">
+          <img src="img/qr-code.svg" class="img-fluid" alt="">
+        </div>
+        <p class="footer" >iOS 13+, iPadOS 13+ or Android with ARCore 1.9+ required</p>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-
-  </model-viewer>
+  </div>
 
   <script>
     function switchSrc(model) {
@@ -69,9 +66,7 @@
     }
   </script>
 
-
   <script src="js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 
