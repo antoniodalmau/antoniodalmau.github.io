@@ -94,7 +94,7 @@
                             <input type="radio" class="btn-check" name="back" id="colour" value="#FF00FF"
                                 autocomplete="off">
                             <label class="btn btn-outline-primary btn-sm" for="colour">Color</label>
-                            <input id="hue" type="range" min="0" max="359" step="1" value="50" class="form-range">
+                            <input id="metalness" type="range" min="0" max="360" step="1" value="0">
                         </div>
                     </div>
                 </div>
@@ -129,20 +129,22 @@
                 '&nbsp;&nbsp;<strong>SIZE: </strong>' + $("input[name='size']:checked").val() +
                 '&nbsp;&nbsp;<strong>BACK: </strong>' + $("input[name='back']:checked").val() +
                 '</sup>'
-            );            
-            document.querySelector('#hue').addEventListener('input', (event) => {
-                const modelViewerTexture = document.querySelector("model-viewer");
-            let material = modelViewerTexture.model.materials[1];            
-                var hex = HSLAToHexA(event.target.value, 50, 50);
-                hex = hex.replace('#', '');
-                r = parseInt(hex.substring(0, 2), 16) / 255;
-                g = parseInt(hex.substring(2, 4), 16) / 255;
-                b = parseInt(hex.substring(4, 6), 16) / 255;
-                var backsidecolor = [r, g, b, 1];
+            );
+            const modelViewerTexture = document.querySelector("model-viewer");
+            let material = modelViewerTexture.model.materials[1];
+            var hex = $("input[name='back']:checked").val();
+            hex = hex.replace('#', '');
+            //r = parseInt(hex.substring(0, 2), 16)/255;            
+            //g = parseInt(hex.substring(2, 4), 16)/255;
+            //b = parseInt(hex.substring(4, 6), 16)/255;                             
+            //var backsidecolor = [r, g, b, 1];            
+            //material.pbrMetallicRoughness.setBaseColorFactor(backsidecolor);
+            document.querySelector('#metalness').addEventListener('input', (event) => {
+                var r = event.target.value;                
+                var backsidecolor = [r, 1, 1, 1];
                 material.pbrMetallicRoughness.setBaseColorFactor(backsidecolor);
-                console.log('slide: ' + event.target.value + 'hex : ' + hex);
             });
-
+            console.log('r: ' + r + 'backsidecolor: ' + backsidecolor);
         }
         function HSLAToHexA(h, s, l) {
             s /= 100;
@@ -181,7 +183,13 @@
             // Having obtained RGB, convert channels to hex
             r = Math.round((r + m) * 255).toString(16);
             g = Math.round((g + m) * 255).toString(16);
-            b = Math.round((b + m) * 255).toString(16);            
+            b = Math.round((b + m) * 255).toString(16);
+            if (r.length == 1)
+                r = "0" + r;
+            if (g.length == 1)
+                g = "0" + g;
+            if (b.length == 1)
+                b = "0" + b;
             return "#" + r + g + b;
         }
     </script>
