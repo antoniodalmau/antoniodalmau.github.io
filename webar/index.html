@@ -61,14 +61,14 @@
 
   <script>
     function switchSrc(model) {
-      document.querySelector("model-viewer").src = 'models/' + model + '.glb';
-      document.querySelector("model-viewer").iosSrc = 'models/' + model + '.usdz';
       if ((model == 'canvas') || (model == 'ppt')) {        
         document.querySelector("model-viewer").arPlacement = 'wall';        
       }
       else {
         document.querySelector("model-viewer").arPlacement = 'floor';        
       }
+      document.querySelector("model-viewer").src = 'models/' + model + '.glb';
+      document.querySelector("model-viewer").iosSrc = 'models/' + model + '.usdz';      
     }
   </script>
 
