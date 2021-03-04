@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>WallDecor 2D CSS Effects</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i');
+	body {				
+		color: #666;
+		font-family: 'Open Sans';
+		text-align: center;		
+	}
+
+	h1, h2{font-weight: 300;}
+	code{color: #BBB;}
+
+
+	.copy{
+		display: inline-block;
+		max-width: 510px;
+		text-align: left;		
+	}
+
+	.teaser{				
+		background: #EEE url('https://i.ibb.co/092gLY5/walldecor-bg.jpg') center 25% no-repeat;
+		
+		height: 500px;		
+		margin: 0 auto;		
+		max-width: 1920px;		
+	}
+
+	.container{
+		margin: 0 auto;
+		padding-left: 50px;
+		padding-top: 30px;
+		width: 1020px;		
+	}
+
+	.plain{
+		background: url('https://picsum.photos/410/308/?random');
+		display: inline-block;
+		float: left;				
+		height: 308px;
+		width: 410px;
+	}
+	.canvas{
+		background: url('https://picsum.photos/410/308/?random');		
+		border-radius: 4px;
+		box-shadow:
+		inset 2px 2px 3px rgba(255,255,255,.7),
+		inset -2px -2px 3px rgba(0,0,0,.35),
+		3px 3px 7px rgba(0,0,0,.5),
+		3px 3px 25px rgba(0,0,0,0.25),
+		5px 5px 50px rgba(0,0,0,.25),
+		-3px -3px 7px rgba(255,255,255,.5),
+		-3px -3px 25px rgba(255,255,255,.25),
+		-5px -5px 50px rgba(255,255,255,.25);
+		display: inline-block;
+		float: left;		
+		height: 308px;
+		opacity: 0.95;
+		width: 410px;	
+	}
+	.acrylic{
+		background: 
+		linear-gradient(95deg, rgba(255,255,255,.75) 0%, rgba(255,255,255,.5) 12%, rgba(255,255,255,0) 15%),
+		linear-gradient(95deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 33%),
+		url('https://picsum.photos/410/308/?random') center center no-repeat,
+		linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25)),
+		url('https://picsum.photos/410/308/?random');
+		background-size: 100%, 100%, 99.2% 98.4%, 100%;
+		border-radius: 3px;
+		box-shadow:		
+		3px 3px 7px rgba(0,0,0,.5),
+		3px 3px 25px rgba(0,0,0,0.25),
+		5px 5px 50px rgba(0,0,0,.25),
+		-3px -3px 7px rgba(255,255,255,.5),
+		-3px -3px 25px rgba(255,255,255,.25),
+		-5px -5px 50px rgba(255,255,255,.25);
+		display: inline-block;
+		float: left;		
+		height: 308px;
+		opacity: 1;
+		width: 410px;
+	}
+	.alu{
+		background: 
+		linear-gradient(95deg, rgba(255,255,255,.7) 0%, rgba(255,255,255,.5) 8%, rgba(255,255,255,0) 15%),
+		linear-gradient(95deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 33%),		
+		url('https://picsum.photos/410/308/?random');		
+		border-radius: 3px;
+		box-shadow:		
+		3px 3px 7px rgba(0,0,0,.5),
+		3px 3px 25px rgba(0,0,0,0.25),
+		5px 5px 50px rgba(0,0,0,.25),
+		-3px -3px 7px rgba(255,255,255,.5),
+		-3px -3px 25px rgba(255,255,255,.25),
+		-5px -5px 50px rgba(255,255,255,.25);
+		display: inline-block;
+		float: left;		
+		height: 308px;
+		opacity: 1;
+		width: 410px;
+	}	
+	.passepartout{
+		background:
+		linear-gradient(95deg, rgba(255,255,255,.75) 0%, rgba(255,255,255,.5) 23%, rgba(255,255,255,0) 25%),
+		linear-gradient(95deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 50%),		
+		url('https://picsum.photos/410/308/?random') center center no-repeat,
+		linear-gradient(135deg, rgba(0,0,0,.2) 0%, rgba(0,0,0,0) 100%) center center no-repeat,
+		linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) center center no-repeat;
+		background-size: 100%, 100%, 75% 70%, 89.5% 86%, 89.5% 86%;
+		border-radius: 0px;
+		box-shadow:
+		inset 2px 2px 2px rgba(255,255,255,.5),
+		inset -2px -2px 2px rgba(0,0,0,1),
+		inset 14px 14px 5px 10px rgba(0,0,0,.9),
+		inset -14px -14px 5px 10px rgba(0,0,0,.5),
+		inset 0px 0px 0px 22px black,
+		3px 3px 7px rgba(0,0,0,.5),
+		3px 3px 25px rgba(0,0,0,0.25),
+		5px 5px 50px rgba(0,0,0,.25),
+		-3px -3px 7px rgba(255,255,255,.5),
+		-3px -3px 25px rgba(255,255,255,.25),
+		-5px -5px 50px rgba(255,255,255,.25);
+		display: inline-block;
+		float: left;		
+		height: 308px;
+		opacity: .95;
+		width: 410px;
+	}
+	.wood{
+		background: url('wood-texture.jpg'), url('https://picsum.photos/410/308/?random');
+		background-blend-mode: multiply;
+		border-radius: 0px;
+		box-shadow:		
+		3px 3px 7px rgba(0,0,0,.5),
+		3px 3px 25px rgba(0,0,0,0.25),
+		5px 5px 50px rgba(0,0,0,.25),
+		-3px -3px 7px rgba(255,255,255,.5),
+		-3px -3px 25px rgba(255,255,255,.25),
+		-5px -5px 50px rgba(255,255,255,.25);
+		display: inline-block;
+		float: left;		
+		height: 308px;
+		opacity: .95;
+		width: 410px;
+	}
+	.forex{
+		background: url('https://picsum.photos/410/308/?random');		
+		border-radius: 3px;
+		box-shadow:		
+		3px 3px 7px rgba(0,0,0,.5),
+		3px 3px 25px rgba(0,0,0,0.25),
+		5px 5px 50px rgba(0,0,0,.25),
+		-3px -3px 7px rgba(255,255,255,.5),
+		-3px -3px 25px rgba(255,255,255,.25),
+		-5px -5px 50px rgba(255,255,255,.25);
+		display: inline-block;
+		float: left;		
+		height: 308px;
+		opacity: .95;
+		width: 410px;
+	}
+	
+	
+</style>
+</head>
+<body>
+
+	<h1>WALLDECOR 2D CSS EFFECTS</h1>
+	<p><strong>HINT:</strong> refresh the page to load a new random motif.</p>
+
+	<div class="teaser">
+		<div class="container">
+			<div class="plain">				
+			</div>
+			<div class="copy">
+				<h1>PLAIN IMAGE</h1>
+				<small>					
+					<code>
+						background: url('https://picsum.photos/410/308/?random');							
+					</code>
+				</small>
+			</div>
+		</div>
+	</div>	
+	<br>	
+	<div class="teaser">
+		<div class="container">
+			<div class="canvas">				
+			</div>
+			<div class="copy">
+				<h1>CANVAS</h1>
+				<small>
+					<code>
+						background: url('https://picsum.photos/410/308/?random');<br>
+						border-radius:4px;<br>
+						box-shadow:
+						inset 2px 2px 3px rgba(255,255,255,.7),
+						inset -2px -2px 3px rgba(0,0,0,.35),
+						3px 3px 7px rgba(0,0,0,.5),
+						3px 3px 25px rgba(0,0,0,0.25),
+						5px 5px 50px rgba(0,0,0,.25),
+						-3px -3px 7px rgba(255,255,255,.5),
+						-3px -3px 25px rgba(255,255,255,.25),
+						-5px -5px 50px rgba(255,255,255,.25);<br>
+						opacity: 0.95;
+					</code>
+				</small>
+			</div>				
+		</div>
+	</div>	
+	<br>	
+	<div class="teaser">
+		<div class="container">
+			<div class="acrylic">				
+			</div>
+			<div class="copy">
+				<h1>ACRYLIC</h1>
+				<small>
+					<code>
+						background: 
+						linear-gradient(100deg, rgba(255,255,255,.75) 0%, rgba(255,255,255,.5) 12%, rgba(255,255,255,0) 15%),
+						linear-gradient(100deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 33%),
+						url('https://picsum.photos/410/308/?random') center center no-repeat,
+						linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25)),
+						url('https://picsum.photos/410/308/?random');<br>
+						background-size: 100%, 100%, 99.2% 98.4%, 100%;<br>
+						border-radius: 3px;<br>
+						box-shadow:		
+						3px 3px 7px rgba(0,0,0,.5),
+						3px 3px 25px rgba(0,0,0,0.25),
+						5px 5px 50px rgba(0,0,0,.25),
+						-3px -3px 7px rgba(255,255,255,.5),
+						-3px -3px 25px rgba(255,255,255,.25),
+						-5px -5px 50px rgba(255,255,255,.25);<br>
+						opacity: 1;
+					</code>
+				</small>
+			</div>				
+		</div>
+	</div>	
+	<br>	
+	<div class="teaser">
+		<div class="container">
+			<div class="alu">				
+			</div>
+			<div class="copy">
+				<h1>ALUMINIUM</h1>
+				<small>
+					<code>
+						background: 
+						linear-gradient(100deg, rgba(255,255,255,.7) 0%, rgba(255,255,255,.5) 8%, rgba(255,255,255,0) 15%),
+						linear-gradient(100deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 33%),		
+						url('https://picsum.photos/410/308/?random');<br>
+						border-radius: 3px;<br>
+						box-shadow:		
+						3px 3px 7px rgba(0,0,0,.5),
+						3px 3px 25px rgba(0,0,0,0.25),
+						5px 5px 50px rgba(0,0,0,.25),
+						-3px -3px 7px rgba(255,255,255,.5),
+						-3px -3px 25px rgba(255,255,255,.25),
+						-5px -5px 50px rgba(255,255,255,.25);<br>
+						opacity: 1;
+					</code>
+				</small>
+			</div>				
+		</div>
+	</div>	
+	<br>		
+	<div class="teaser">
+		<div class="container">
+			<div class="passepartout">				
+			</div>
+			<div class="copy">
+				<h1>PASSEPARTOUT</h1>
+				<small>
+					<code>
+						background:
+						linear-gradient(95deg, rgba(255,255,255,.75) 0%, rgba(255,255,255,.5) 23%, rgba(255,255,255,0) 25%),
+						linear-gradient(95deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 50%),		
+						url('https://picsum.photos/410/308/?random') center center no-repeat,
+						linear-gradient(135deg, rgba(0,0,0,.2) 0%, rgba(0,0,0,0) 100%) center center no-repeat,
+						linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)) center center no-repeat,
+						linear-gradient(135deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100% );<br>
+						background-size: 100%, 100%, 75% 70%, 89.5% 86%, 89.5% 86%, 100%;<br>
+						border-radius: 0px;<br>
+						box-shadow:
+						inset 2px 2px 2px rgba(255,255,255,.5),
+						inset -2px -2px 2px rgba(0,0,0,1),
+						inset 14px 14px 5px 10px rgba(0,0,0,.9),
+						inset -14px -14px 5px 10px rgba(0,0,0,.5),
+						inset 0px 0px 0px 22px black,
+						3px 3px 7px rgba(0,0,0,.5),
+						3px 3px 25px rgba(0,0,0,0.25),
+						5px 5px 50px rgba(0,0,0,.25),
+						-3px -3px 7px rgba(255,255,255,.5),
+						-3px -3px 25px rgba(255,255,255,.25),
+						-5px -5px 50px rgba(255,255,255,.25);<br>
+						opacity: .95;
+					</code>
+				</small>
+			</div>				
+		</div>
+	</div>	
+	<br>	
+	<div class="teaser">
+		<div class="container">
+			<div class="wood">				
+			</div>
+			<div class="copy">
+				<h1>WOOD</h1>
+				<small>
+					<code>
+						border-radius: 0px;<br>
+						box-shadow:		
+						3px 3px 7px rgba(0,0,0,.5),
+						3px 3px 25px rgba(0,0,0,0.25),
+						5px 5px 50px rgba(0,0,0,.25),
+						-3px -3px 7px rgba(255,255,255,.5),
+						-3px -3px 25px rgba(255,255,255,.25),
+						-5px -5px 50px rgba(255,255,255,.25);<br>
+						opacity: .95;
+					</code>
+				</small>
+			</div>				
+		</div>
+	</div>
+	<br>	
+	<div class="teaser">
+		<div class="container">
+			<div class="forex">				
+			</div>
+			<div class="copy">
+				<h1>FOREX</h1>
+				<small>
+					<code>
+						border-radius: 3px;<br>
+						box-shadow:		
+						3px 3px 7px rgba(0,0,0,.5),
+						3px 3px 25px rgba(0,0,0,0.25),
+						5px 5px 50px rgba(0,0,0,.25),
+						-3px -3px 7px rgba(255,255,255,.5),
+						-3px -3px 25px rgba(255,255,255,.25),
+						-5px -5px 50px rgba(255,255,255,.25);<br>
+						opacity: .95;
+					</code>
+				</small>
+			</div>				
+		</div>
+	</div>
+
+</body>
+</html>

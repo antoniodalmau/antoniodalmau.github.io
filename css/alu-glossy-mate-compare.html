@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Alu</title>
+	<style>
+	div {display: inline-block;}
+	body {
+		text-align: center;		
+	}
+	#matte{
+		filter: saturate(0.5);
+	}
+	.reflection{				
+		animation: reflex 7s 1;    	
+		animation-fill-mode: both;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
+		position: absolute;left: 0;top: 0;		
+	}
+	
+	@keyframes reflex { 
+		from {transform: translate(500px) skewX(-30deg);}
+		to {transform: translate(-500px) skewX(-30deg);}		
+	}
+	
+</style>
+</head>
+<body>	
+
+	<div>
+		<h1>Alu-Dibond Matte</h1>
+		<canvas id="matte" width="400" height="300"></canvas>
+	</div>
+
+
+	<div>
+		<h1>Alu-Dibond Glossy</h1>
+		<div style="position: relative; overflow: hidden;">			
+			<canvas width="400" height="300" class="reflection"></canvas>
+			<div>			
+				<canvas id="glossy" class="icon" width="400" height="300"></canvas>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+		var canvasMatte = document.getElementById('matte');
+		var contextMatte = canvasMatte.getContext('2d');
+		var imageObjMatte = new Image();
+		imageObjMatte.onload = function() {contextMatte.drawImage(imageObjMatte,0,0);};
+		imageObjMatte.src = 'https://picsum.photos/400/300/?random';
+	</script>
+
+	<script>
+		var canvasGlossy = document.getElementById('glossy');
+		var contextGlossy = canvasGlossy.getContext('2d');
+		var imageObjGlossy = new Image();
+		imageObjGlossy.onload = function() {contextGlossy.drawImage(imageObjGlossy,0,0);};
+		imageObjGlossy.src = 'https://picsum.photos/400/300/?random';
+	</script>
+
+</body>
+</html>

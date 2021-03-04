@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>WallDecor 3D CSS Effect</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i');
+	body {
+		color: #666;
+		font-family: 'Open Sans';		
+	}
+
+	h1, h2{font-weight: 300;}
+	code{color: #BBB;}
+
+	.copy{
+		display: inline-block;
+		max-width: 510px;
+		text-align: left;		
+	}
+
+	.scene {
+		width: 410px;
+		height: 308px;
+		/*border: 1px solid #CCC;*/
+		perspective: 1500px;
+		display: inline-block;
+	}
+
+	.canvas3D {
+		width: 410px;
+		height: 308px;
+		position: relative;
+		transform-style: preserve-3d;
+		transform: translateZ(-10px);
+		transition: transform 1s;		
+	}
+
+	.canvas3D.show-front  { transform: translateZ( -10px) rotateY(   0deg); }
+	.canvas3D.show-back   { transform: translateZ( -10px) rotateY(-180deg); }
+	.canvas3D.show-right  { transform: translateZ(-205px) rotateY( -90deg); }
+	.canvas3D.show-left   { transform: translateZ(-205px) rotateY(  90deg); }
+	.canvas3D.show-top    { transform: translateZ(-154px) rotateX( -90deg); }
+	.canvas3D.show-bottom { transform: translateZ(-154px) rotateX(  90deg); }
+
+
+	.canvas3D__face{
+		position: absolute;		
+		font-size: 40px;
+		font-weight: bold;
+		color: white;
+		text-align: center;		
+	}
+
+	.canvas3D__face--front,
+	.canvas3D__face--back {
+		width: 410px;
+		height: 308px;
+		line-height: 308px;		
+	}
+
+	.canvas3D__face--right,
+	.canvas3D__face--left {
+		width: 20px;
+		height: 308px;
+		left: 196px;
+		line-height: 308px;		
+	}
+
+	.canvas3D__face--top
+	{
+		width: 410px;
+		height: 20px;
+		top: 10px;
+		line-height: 20px;
+	}
+	.canvas3D__face--bottom
+	{
+		width: 410px;
+		height: 20px;
+		top: 278px;
+		line-height: 20px;
+	}
+
+
+	.canvas3D__face--front  { background: hsla(  0, 100%, 50%, 0.7); }
+.canvas3D_face--right  { background: hsla( 60, 100%, 50%, 0.7); }
+.canvas3D__face--back   { background: hsla(120, 100%, 50%, 0.7); }
+.canvas3D__face--left   { background: hsla(180, 100%, 50%, 0.7); }
+.canvas3D__face--top    { background: hsla(240, 100%, 50%, 0.7); }
+.canvas3D__face--bottom { background: hsla(300, 100%, 50%, 0.7); }
+	
+
+	.canvas3D__face--front{		
+		transform: rotateY(  30deg) translateZ( 10px);		
+	}
+	.canvas3D__face--left{		
+		transform: rotateY(-60deg) translateZ(205px) scaleX(-1);				
+	}
+	.canvas3D__face--back{		
+		transform: rotateY(210deg) translateZ( 10px);
+	}
+	.canvas3D__face--right{		
+		transform: rotateY( 120deg) translateZ(205px);
+	}
+	.canvas3D__face--top{		
+		transform: rotateY(30deg) rotateX( 90deg) translateZ(20px);
+	}
+	.canvas3D__face--bottom{		
+		transform: rotateY(30deg) rotateX(-90deg) translateZ(20px);
+	}
+
+	
+	.teaser{		
+		background: #EEE url('https://drive.google.com/uc?id=1UF_FsMme_myZH6zI0awRWOXR3oaSQxQE') center 25% no-repeat;
+		height: 500px;		
+		margin: 0 auto;		
+		max-width: 1920px;		
+	}
+
+	.container{
+		margin: 0 auto;
+		padding-left: 50px;
+		padding-top: 30px;
+		width: 1020px;		
+	}
+	
+</style>
+
+</head>
+<body>
+
+	<div class="teaser">
+		<div class="container">
+			<div class="scene">
+				<div class="canvas3D">
+					<div class="canvas3D__face canvas3D__face--front">FRONT</div>
+					<div class="canvas3D__face canvas3D__face--back">BACK</div>
+					<div class="canvas3D__face canvas3D__face--right">RIGHT</div>
+					<div class="canvas3D__face canvas3D__face--left">LEFT</div>
+					<div class="canvas3D__face canvas3D__face--top">TOP</div>
+					<div class="canvas3D__face canvas3D__face--bottom">BOTTOM</div>
+				</div>
+			</div>
+			<div class="copy">
+
+				<p class="radio-group">
+					<label>
+						<input type="radio" name="rotate-cube-side" value="front" checked /> front
+					</label>
+					<label>
+						<input type="radio" name="rotate-cube-side" value="back" /> back
+					</label>
+					<label>
+						<input type="radio" name="rotate-cube-side" value="left" /> left
+					</label>
+					<label>
+						<input type="radio" name="rotate-cube-side" value="right" /> right
+					</label>
+					<label>
+						<input type="radio" name="rotate-cube-side" value="top" /> top
+					</label>
+					<label>
+						<input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+					</label>
+				</p>
+			</div>				
+		</div>
+	</div>	
+
+
+
+
+
+	<script>
+		var canvas3D = document.querySelector('.canvas3D');
+		var radioGroup = document.querySelector('.radio-group');
+		var currentClass = '';
+
+		function changeSide() {
+			var checkedRadio = radioGroup.querySelector(':checked');
+			var showClass = 'show-' + checkedRadio.value;
+			if ( currentClass ) {
+				canvas3D.classList.remove( currentClass );
+			}
+			canvas3D.classList.add( showClass );
+			currentClass = showClass;
+		}
+// set initial side
+changeSide();
+
+radioGroup.addEventListener( 'change', changeSide );
+</script>
+
+</body>
+</html>
