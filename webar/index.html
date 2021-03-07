@@ -14,7 +14,7 @@
 <body>
 
   <model-viewer alt="model" ar ar-modes="scene-viewer webxr quick-look" ar-scale="auto" ar-placement="floor" camera-controls exposure=".7"
-    ios-src="models/mug.usdz" loading="lazy" quick-look-browsers="safari chrome" shadow-softness="1" shadow-intensity="1"
+    ios-src="models/mug.usdz" loading="eager" quick-look-browsers="safari chrome" shadow-softness="1" shadow-intensity="1"
     src="models/mug.glb" styles="width: auto; height:90vh;">
 
     <br>
@@ -59,12 +59,12 @@
 
   <script>
     function switchSrc(model) {
-      //if ((model == 'canvas') || (model == 'ppt')) {        
-      //  document.querySelector("model-viewer").arPlacement = 'wall';        
-      //}
-      //else {
-      //  document.querySelector("model-viewer").arPlacement = 'floor';                
-      //}            
+      if ((model == 'canvas') || (model == 'ppt')) {        
+        document.querySelector("model-viewer").arPlacement = 'wall';        
+      }
+      else {
+        document.querySelector("model-viewer").arPlacement = 'floor';                
+      }            
       document.querySelector("model-viewer").src = 'models/' + model + '.glb';
       document.querySelector("model-viewer").iosSrc = 'models/' + model + '.usdz';     
     }
