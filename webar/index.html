@@ -18,7 +18,7 @@
     shadow-softness="1" shadow-intensity="1" src="models/mug.glb" styles="width: auto; height:90vh;">
 
     <br>
-    <span class="footer">-Select a product:</span>
+    <span class="footer">Select a product:</span>
     <br>
     <select id="model">
       <option value="mug">Mug</option>
@@ -63,12 +63,10 @@
 
     document.querySelector('#model').addEventListener('input', (event) => {
       let model = event.target.value;
-      if ((model == 'canvas') || (model == 'ppt')) {
-        document.querySelector("model-viewer").arPlacement = 'wall';
-      }
-      else {
-        document.querySelector("model-viewer").arPlacement = 'floor';
-      }
+      if ((model == 'canvas') || (model == 'ppt'))
+        modelViewerModel.arPlacement = 'wall';
+      else
+        modelViewerModel.arPlacement = 'floor';
       modelViewerModel.src = 'models/' + model + '.glb';
       modelViewerModel.iosSrc = 'models/' + model + '.usdz';
     });
