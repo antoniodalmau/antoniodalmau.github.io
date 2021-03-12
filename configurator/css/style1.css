@@ -4,8 +4,8 @@ body {
   height: 100%;
   color: #000;
   text-align: center;
-  background-color: #ffffff;  
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: #eee;  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;  
 }
 
 
@@ -18,9 +18,10 @@ body.modal-open .modal .modal-dialog {
   margin: auto;
   width: 250px;
 }
-.footer{
-  font-size: small;
-}
+
+
+
+
 select {
   font-size: xx-large;
   background: rgba(82, 55, 55, 0.05);
@@ -39,23 +40,29 @@ select:focus {
   outline: none;
 }
 
-#status{
-  color:#aaa;
-}
 /* This keeps child nodes hidden while the element loads */
 
 :not(:defined)>* {
   display: none;
 }
 
+
+
 model-viewer {
   background-color: #eee;
   overflow-x: hidden;
   --poster-color: #eee;
   width: auto;
-  height: 100vh;
+  height: 70vh;
 }
 
+footer {
+  height: 30vh;  
+}
+.option {
+font-weight: bolder;
+display: block;
+}
 
 #ar-button {
   background-image: url(../img/icon-ar.svg);
@@ -90,18 +97,33 @@ model-viewer {
   outline: 1px solid #4285f4;
 }
 
+.title{
+  font-weight: bolder;
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  top: 0;
+  margin-top: 1em;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100%;
+  color: #bbb;
+}
+.filter-title{
+  filter: invert(77%) sepia(14%) saturate(16%) hue-rotate(77deg) brightness(96%) contrast(88%);
+}
 
 .upload-msg {
   text-align: center;
-  padding-top: 30%;
+  /*padding-top: 10px;
   padding-left: 30px;
-  padding-right: 30px; 
-  background-color: #e7f1ff; 
-  /*color: #aaaaaa;*/
-  width: 300px;
-  height: 300px;
+  padding-right: 30px;  
   margin: 10px auto;  
-  /*border: 2px solid #eee;*/
+  */
+  color: #aaaaaa;
+  width: 100%;
+  height: 25vh;
+  border: 2px solid #eeeeee;
 }
 
 .upload-demo.ready #upload-demo {
@@ -127,8 +149,8 @@ model-viewer {
 
 
 @media only screen and (max-width: 768px) {
-  model-viewer {
+  /*model-viewer {
     width: auto;
-    height:75vh;
-  }
+    height:50vh;
+  }*/
 }

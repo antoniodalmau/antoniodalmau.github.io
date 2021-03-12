@@ -20,7 +20,7 @@
     <br>
     <span class="footer">Select a product:</span>
     <br>
-    <select id="model">
+    <select id="models" onchange="switchSrc(this.value);">
       <option value="mug">Mug</option>
       <option value="cushion">Cushion</option>
       <option value="ppt">Passepartout</option>
@@ -58,27 +58,18 @@
   </div>
 
   <script>
+    function switchSrc(model) {
 
-    const modelViewerModel = document.querySelector("model-viewer");
+      if ((model == 'canvas') || (model == 'ppt')) {
+        document.querySelector("model-viewer").arPlacement = 'wall';
+      }
+      else {
+        document.querySelector("model-viewer").arPlacement = 'floor';
+      }
+      document.querySelector("model-viewer").src = 'models/' + model + '.glb';
+      document.querySelector("model-viewer").iosSrc = 'models/' + model + '.usdz';
 
-    modelViewerModel.addEventListener("load", (ev) => {
-      document.querySelector('#model').addEventListener('input', (event) => {
-        console.log(event.target.value);
-        modelViewerModel.src = 'models/' + event.target.value + '.glb';        
-      });
-    });
-
-
-    //if ((model == 'canvas') || (model == 'ppt')) {
-    //  document.querySelector("model-viewer").arPlacement = 'wall';
-    //}
-    //else {
-    //  document.querySelector("model-viewer").arPlacement = 'floor';
-    //}
-    //document.querySelector("model-viewer").src = 'models/' + model + '.glb';
-    //document.querySelector("model-viewer").iosSrc = 'models/' + model + '.usdz';
-
-
+    }
 
 
   </script>
