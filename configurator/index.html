@@ -19,12 +19,12 @@
 <body class="d-flex flex-column h-100" onload="updateChoices()">
 
     <div class="row d-flex align-items-center m-0">
-        <div class="col-xl-8 col-lg-8 xs-order-last">
+        <div class="col-xl-8 col-lg-8">
             <model-viewer camera-controls src="models/cushion.glb" alt="model" shadow-intensity="1">
-                <div class="position-absolute bottom-0" id="status"></div>
+                <!--div class="position-absolute bottom-0" id="status"></div-->
             </model-viewer>
         </div>
-        <div class="col-xl-4 col-lg-4">            
+        <div class="col-xl-4 col-lg-4 order-lg-first">            
             <div classs="container">
                 <h2 class="title">Configurator</h2>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -38,8 +38,8 @@
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse show"
                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <!--div class="upload-demo">
+                            <div class="accordion-body" style="padding: 0;">
+                                <div class="upload-demo">
                                     <input type="file" id="upload" value="Choose a file" accept="image/*"
                                         data-role="none" />
                                     <div class="upload-msg btn link-primary">
@@ -53,7 +53,7 @@
                                             Change Image
                                         </button>
                                     </div>
-                                </div-->
+                                </div>
                             </div>
                         </div>
                     </div>                    
@@ -130,7 +130,7 @@
     </div>
 
 
-    <!--script>
+    <script>
         function updateChoices() {
             $("#status").html(
                 '<sup>' +
@@ -278,7 +278,7 @@
             });
 
         });
-    </script-->
+    </script>
 
 
 
