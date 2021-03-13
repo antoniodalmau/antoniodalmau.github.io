@@ -65,7 +65,8 @@ model-viewer {
 
 @media only screen and (max-width: 768px) {
   model-viewer {
-    width: auto;
+    width: 90vw;
     height:50vh;
+    margin: 0 auto;
   }
 }
