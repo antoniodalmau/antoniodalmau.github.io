@@ -13,25 +13,9 @@ body {
   color:#aaa;
 }
 
-select {
-  font-size: xx-large;
-  background: rgba(82, 55, 55, 0.05);
-  padding: .5em;
-  color: #666;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  text-align: center;
-  text-align-last: center;
-  -moz-text-align-last: center;
+*:focus {
+  outline: none !important;
 }
-
-select:focus {
-  outline: none;
-}
-
-/* This keeps child nodes hidden while the element loads */
 
 :not(:defined)>* {
   display: none;
