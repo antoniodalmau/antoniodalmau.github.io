@@ -64,8 +64,8 @@
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlush">
-                        <div class="accordion-body text-start" onchange="updateChoices()">                            
-                            <input id="hue" type="range" min="0" max="359" step="1" value="50" class="form-range">
+                        <div class="accordion-body text-start">                            
+                            <!--input id="hue" type="range" min="0" max="359" step="1" value="50" class="form-range"-->
                             <!--label class="btn btn-outline-primary btn-sm" for="colour">Color</label-->
                             <label for="exampleColorInput" class="form-label">Color picker</label>
                             <input type="color" class="form-control form-control-color" id="colorPicker"
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                 </div>                
-                <div class="accordion-item">
+                <!--div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseFour" aria-expanded="false"
@@ -112,7 +112,7 @@
                             <label class="btn btn-outline-primary btn-sm" for="w&b">White & Black</label>
                         </div>
                     </div>
-                </div>
+                </div-->
             </div>
         </div>
     </div>
@@ -126,7 +126,7 @@
             const modelViewer = document.querySelector("model-viewer");
             modelViewer.cameraOrbit = '180deg 75deg 105%';
             document.querySelector('#colorPicker').addEventListener('input', (event) => {
-                //console.log(event.target.value);
+                console.log(event.target.value);
                 let material = modelViewer.model.materials[1];
                 var hex = event.target.value;
                 hex = hex.replace('#', '');
@@ -137,48 +137,7 @@
                 material.pbrMetallicRoughness.setBaseColorFactor(backsidecolor);
                 console.log(backsidecolor);
             });
-        });
-        function HSLAToHexA(h, s, l) {
-            s /= 100;
-            l /= 100;
-            let c = (1 - Math.abs(2 * l - 1)) * s,
-                x = c * (1 - Math.abs((h / 60) % 2 - 1)),
-                m = l - c / 2,
-                r = 0,
-                g = 0,
-                b = 0;
-            if (0 <= h && h < 60) {
-                r = c;
-                g = x;
-                b = 0;
-            } else if (60 <= h && h < 120) {
-                r = x;
-                g = c;
-                b = 0;
-            } else if (120 <= h && h < 180) {
-                r = 0;
-                g = c;
-                b = x;
-            } else if (180 <= h && h < 240) {
-                r = 0;
-                g = x;
-                b = c;
-            } else if (240 <= h && h < 300) {
-                r = x;
-                g = 0;
-                b = c;
-            } else if (300 <= h && h < 360) {
-                r = c;
-                g = 0;
-                b = x;
-            }
-            // Having obtained RGB, convert channels to hex
-            r = Math.round((r + m) * 255).toString(16);
-            g = Math.round((g + m) * 255).toString(16);
-            b = Math.round((b + m) * 255).toString(16);
-            return "#" + r + g + b;
-        }
-
+        });        
     </script>
 
 
@@ -303,13 +262,13 @@
                 viewport: {
                     //width: 251,
                     //height: 95,
-                    width: 250,
-                    height: 250,
+                    width: 200,
+                    height: 200,
                     type: 'square'
                 },
                 boundary: {
-                    width: 300,
-                    height: 300
+                    width: 250,
+                    height: 250
                 },
                 mouseWheelZoom: true,
                 customClass: 'testCroppie'
