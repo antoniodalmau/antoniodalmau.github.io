@@ -27,7 +27,7 @@ display: inline-block;
 }
 
 
-model-viewer {
+model-viewer {  
   background-color: #eee;
   overflow-x: hidden;
   --poster-color: #eee;

@@ -21,7 +21,6 @@
     <div class="row d-flex align-items-center m-0">
         <div class="col-xl-8 col-lg-8">
             <model-viewer camera-controls src="models/cushion.glb" alt="model" shadow-intensity="1">
-                <!--div class="position-absolute bottom-0" id="status"></div-->
             </model-viewer>
         </div>
         <div class="col-xl-4 col-lg-4 order-lg-first">
@@ -65,54 +64,13 @@
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlush">
                         <div class="accordion-body text-start">
-                            <!--input id="hue" type="range" min="0" max="359" step="1" value="50" class="form-range"-->
-                            <!--label class="btn btn-outline-primary btn-sm" for="colour">Color</label-->
                             <label for="exampleColorInput" class="form-label">Color picker &nbsp;</label>
                             <input type="color" class="form-control form-control-color" id="colorPicker" value="#ffffff"
                                 title="Choose your color">
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Size
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
-                        <div class="accordion-body text-start" onchange="updateChoices()">
-                            <input type="radio" class="btn-check" name="size" id="30cm" value="1" autocomplete="off"
-                                checked>
-                            <label class="btn btn-outline-primary btn-sm" for="30cm">30x30 cm</label>
-                            <input type="radio" class="btn-check" name="size" id="40cm" value="1.1" autocomplete="off">
-                            <label class="btn btn-outline-primary btn-sm" for="40cm">40x40 cm</label>
-                            <input type="radio" class="btn-check" name="size" id="60cm" value="1.2" autocomplete="off">
-                            <label class="btn btn-outline-primary btn-sm" for="60cm">60x60 cm</label>
-                        </div>
-                    </div>
-                </div>
-                <!--div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFour" aria-expanded="false"
-                            aria-controls="flush-collapseFour">
-                            Effect
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                        data-bs-parent="#accordionFlush">
-                        <div class="accordion-body text-start" onchange="updateChoices()">
-                            <input type="radio" class="btn-check" name="effect" id="none" value="none"
-                                autocomplete="off" checked>
-                            <label class="btn btn-outline-primary btn-sm" for="none">None</label>
-                            <input type="radio" class="btn-check" name="effect" id="w&b" autocomplete="off">
-                            <label class="btn btn-outline-primary btn-sm" for="w&b">White & Black</label>
-                        </div>
-                    </div>
-                </div-->
+
             </div>
         </div>
     </div>
@@ -143,15 +101,7 @@
 
     <script>
         function updateChoices() {
-            $("#status").html(
-                '<sup>' +
-                '&nbsp;&nbsp;<strong>SIZE: </strong>' + $("input[name='size']:checked").val() +
-                '&nbsp;&nbsp;<strong>BACK: </strong>' + $("input[name='back']:checked").val() +
-                '</sup>'
-            );
             const modelViewerTransform = document.querySelector("model-viewer");
-            x = y = z = $("input[name='size']:checked").val();
-            modelViewerTransform.scale = `${x} ${y} ${z}`;
 
             document.querySelector('#hue').addEventListener('input', (event) => {
                 const modelViewerTexture = document.querySelector("model-viewer");
@@ -163,7 +113,6 @@
                 b = parseInt(hex.substring(4, 6), 16) / 255;
                 var backsidecolor = [r, g, b, 1];
                 material.pbrMetallicRoughness.setBaseColorFactor(backsidecolor);
-                //console.log('slide: ' + event.target.value + 'hex : ' + hex);
             });
 
         }
