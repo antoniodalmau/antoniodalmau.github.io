@@ -59,16 +59,16 @@
 
   <script>
 
-    const modelViewerModel = document.querySelector("model-viewer");
+    const modelViewer = document.querySelector("model-viewer");
 
     document.querySelector('#model').addEventListener('input', (event) => {
       let model = event.target.value;
       if ((model == 'canvas') || (model == 'ppt'))
-        modelViewerModel.arPlacement = 'wall';
+        modelViewer.arPlacement = 'wall';
       else
-        modelViewerModel.arPlacement = 'floor';
-      modelViewerModel.src = 'models/' + model + '.glb';
-      modelViewerModel.iosSrc = 'models/' + model + '.usdz';
+        modelViewer.arPlacement = 'floor';
+      modelViewer.src = 'models/' + model + '.glb';
+      modelViewer.iosSrc = 'models/' + model + '.usdz';
     });
   </script>
 
