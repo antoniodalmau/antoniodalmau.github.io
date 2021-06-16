@@ -6,7 +6,7 @@ body {
   text-align: center;
   background-color: #eeeeee;
   /*background-image: radial-gradient(dimgrey, black);*/
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;  
 }
 
 body.modal-open .modal {
