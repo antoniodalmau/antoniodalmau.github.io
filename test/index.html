@@ -13,24 +13,14 @@
 
 <body>
 
-  <div class="row">
-    <div class="col-md-7">
-      <h3 style="font-weight: lighter;"><br>LANDSCAPE</h3>
-      <model-viewer src="models/canvas-120x80x4cm-landscape-motif.glb" alt="model" ar
-        ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ar-placement="floor" camera-controls loading="lazy"
-        environment-image exposure=.6 quick-look-browsers="safari chrome" shadow-intensity=1
-        style="width: auto; height: 100vh;">
-      </model-viewer>
-    </div>
-    <div class="col-md-5">
-      <h3 style="font-weight: lighter;"><br>PORTRAIT</h3>
-      <model-viewer src="models/canvas-120x80x4cm-portrait-motif.glb" alt="model" ar
-        ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ar-placement="floor" camera-controls loading="lazy"
-        environment-image exposure=.6 quick-look-browsers="safari chrome" shadow-intensity=1
-        style="width: auto; height: 100vh;">
-      </model-viewer>
-    </div>
-  </div>
+
+  <model-viewer src="models/canvas-120x80x4cm-landscape-motif.glb" alt="model" ar
+    ar-modes="scene-viewer webxr quick-look" ar-scale="auto" ar-placement="wall" camera-controls loading="lazy"
+    environment-image exposure=.7 quick-look-browsers="safari chrome" shadow-intensity=1
+    style="width: auto; height: 100vh;">
+  </model-viewer>
+
+
 
 
   <script src="js/bootstrap.bundle.min.js"></script>
